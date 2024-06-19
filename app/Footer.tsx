@@ -1,9 +1,14 @@
 import React from 'react';
-
+import Logo from "./components/Logo"
 type Props = {};
 const Footer = ({}: Props) => {
-    return (<footer className="bg-gray-800 text-white text-center p-4 fixed bottom-0 w-full">
-        <p>&copy; 2024 My Portfolio</p>
+    return (
+        <footer className="footer px-10 pb-10 bg-base-200 text-base-content">
+        <aside>
+            <Logo/>
+            <p>Michał Romak<br/>Freelancer Software Developer</p>
+        </aside>
+
     </footer>)
 };
 export default Footer;

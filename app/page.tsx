@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Footer from "./Footer";
 import Header from "./Header"
-
+import Invitation from "./components/Invitation"
 export default function Home() {
+
     return (<>
             <div className="flex flex-col min-h-screen">
                 <Header/>
+                <Invitation/>
                 <div className="h-12 bg-stone-950"></div>
                 <main className="flex-grow p-8 bg-zinc-900">
                     <section id="about">

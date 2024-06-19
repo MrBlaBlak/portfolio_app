@@ -13,8 +13,21 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      borderColor: {
+        custom: '#ac6418',
+        custom2: '#ecbb54'
+      },
+      colors: {
+        custom: '#ac6418',
+        custom2: '#ecbb54'
+      },
+      backgroundColor: {
+        custom: '#ac6418',
+        custom2: '#ecbb54'
+      },
     },
   },
+
   plugins: [require("daisyui")],
 };
 export default config;

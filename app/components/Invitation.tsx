@@ -1,17 +1,26 @@
 import React from 'react';
+import TypingEffect from './TypingEffect'
+import SocialButton from './SocialButton'
 
 type Props = {};
 const Invitation = ({}: Props) => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content text-center">
-                <div className="max-w-md">
-                    <p className="">Hi, I am </p>
-                    <h3 className="text-5xl font-bold text-gradient">Michał Romak</h3>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-outline btn-warning text-white">View Projects</button>
-                    <div className="p-1 inline"> </div>
-                    <button className="btn glass text-white">Open PDF Resume</button>
+                <div className="max-w-xl">
+                    <p className="text-white text-xl">Hi, I am </p>
+                    <h1 className="text-5xl font-bold text-gradient p-5">Michał Romak</h1>
+                    <TypingEffect textList={["FrontEnd Developer", "React/Next Developer", "Java Developer"]}
+                                  period={2000}
+                                  typingSpeed={40}
+                                  deletingSpeed={40}/>
+                    <p className="py-6 text-white">An agile learner and effective communicator, I am a skilled web
+                        developer and adept problem solver, dedicated to delivering innovative solutions.</p>
+                    <div className="space-x-4">
+                        <button className="btn btn-outline btn-warning w-40">View Projects</button>
+                        <button className="btn glass text-white w-40">Open PDF Resume</button>
+                    </div>
+                    <SocialButton/>
                 </div>
             </div>
         </div>

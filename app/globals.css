@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,13 +16,28 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+body {
+  color: #ffffff; /* Set text color to white */
+}
 
 .text-gradient {
   background: linear-gradient(to bottom, #ecbb54, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.typing-effect {
+  border-right: 0.08em solid #fff;
+  animation: blink-caret 1s step-end infinite;
+}
 
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffff;
+  }
+}
 
 @layer utilities {
   .text-balance {

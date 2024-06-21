@@ -1,5 +1,5 @@
-import React from 'react';
-import Photo from './Photo'
+import React from "react";
+import Photo from "./Photo"
 
 type Props = {};
 import {FaMobileScreen} from "react-icons/fa6";
@@ -28,7 +28,7 @@ const AboutMe = ({}: Props) => {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <p className="text-gray-400">Education:</p>
-                                    <p className="text-base w-60 ">Master's Degree - Psychology</p>
+                                    <p className="text-base w-60 ">Masters Degree - Psychology</p>
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <p className="text-gray-400">From:</p>

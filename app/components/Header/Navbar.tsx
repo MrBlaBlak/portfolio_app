@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from "./components/Logo"
-import List from "./components/List"
-import Dropdown from "./components/Dropdown"
+import Logo from "../Logo"
+import List from "./List"
+import Dropdown from "./Dropdown"
 type Props = {};
-const Header = ({}: Props) => {
+const Navbar = ({}: Props) => {
 
     return (<>
         <div className="navbar bg-zinc-900 border-b-2 border-b-custom2 py-0 fixed z-50">
@@ -20,4 +20,4 @@ const Header = ({}: Props) => {
         </div>
     </>)
 };
-export default Header;
+export default Navbar;

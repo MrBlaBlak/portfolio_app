@@ -5,7 +5,7 @@ import SocialButton from './SocialButton'
 type Props = {};
 const Invitation = ({}: Props) => {
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen">
             <div className="hero-content text-center appear-animation">
                 <div className="max-w-screen-xl">
                     <p className="text-white text-xl">Hi, I am </p>

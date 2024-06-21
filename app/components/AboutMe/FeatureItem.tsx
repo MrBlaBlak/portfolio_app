@@ -1,6 +1,6 @@
 'use client'
 import React, { ReactNode } from 'react';
-import useIntersectionObserver from "../hooks/useIntersectionObserver"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 type Props = {
     icon: ReactNode,
     children: ReactNode;
@@ -8,7 +8,7 @@ type Props = {
 
 const FeatureItem = ({ icon, children }: Props) => {
     const [ref, isIntersecting] = useIntersectionObserver({
-        threshold: 0.1, // Adjust the threshold as needed
+        threshold: 0.1,
     });
     return (
         <div ref={ref} className={`opacity-0 flex flex-col items-center gap-2 ${isIntersecting ? 'move-up-animation' : ''}`}>

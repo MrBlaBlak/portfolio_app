@@ -25,10 +25,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.typing-effect {
-  border-right: 0.08em solid #fff;
-  animation: blink-caret 1s step-end infinite;
+
+.underline-gradient {
+  background-image: linear-gradient(to right, #fbbf24, #ffffff); /* Gradient colors */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* Thickness of the underline */
 }
+
 
 @keyframes blink-caret {
   from, to {
@@ -38,7 +42,37 @@ body {
     border-color: #ffff;
   }
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes move-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.typing-effect {
+  border-right: 0.08em solid #fff;
+  animation: blink-caret 1s step-end infinite;
+}
+.appear-animation {
+  animation: appear 1s ease-out;
+}
+.move-up-animation {
+  animation: move-up 1s ease-out forwards;
+}
 @layer utilities {
   .text-balance {
     text-wrap: inherit;

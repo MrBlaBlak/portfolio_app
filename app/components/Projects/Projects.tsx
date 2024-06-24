@@ -18,7 +18,7 @@ import { CgFileDocument } from "react-icons/cg";
 type Props = {};
 const Projects = ({}: Props) => {
     return (
-        <div className="hero">
+        <section id="projects" className="hero pt-12">
             <div className="max-w-screen-xl pb-24">
                 <div className="flex flex-col items-center">
                     <Heading title="Projects"/>
@@ -78,7 +78,7 @@ const Projects = ({}: Props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 export default Projects;

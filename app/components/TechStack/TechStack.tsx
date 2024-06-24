@@ -13,8 +13,8 @@ const TechStack = ({}: Props) => {
 
     return (
         <>
-            <div className="hero">
-                    <div className="max-w-screen-xl text-center pb-24">
+            <section id="skills" className="hero pt-12">
+                    <div className="max-w-screen-xl text-center ">
                         <div className="flex flex-col items-center">
                             <Heading title="Tech Stack"/>
                             <div className="flex flex-wrap justify-center px-20 lg:px-10 py-20  gap-24">
@@ -41,7 +41,7 @@ const TechStack = ({}: Props) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
         </>
     )

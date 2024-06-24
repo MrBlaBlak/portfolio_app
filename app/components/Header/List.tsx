@@ -1,16 +1,16 @@
 import React from 'react';
-
+import Link from 'next/link'
 type Props = {
     classes: string,
 };
 const List = ({classes}: Props) => {
     return (
         <ul className={classes}>
-            <li><a href="#home" className="font-semibold hover:text-custom2 ml-3">Home</a></li>
-            <li><a href="#about" className="font-semibold hover:text-custom2 ml-3">About</a></li>
-            <li><a href="#skills" className="font-semibold hover:text-custom2 ml-3"> Skills</a></li>
-            <li><a href="#projects" className="font-semibold hover:text-custom2 ml-3">Projects</a></li>
-            <li><a href="#contacts" className="font-semibold hover:text-custom2 ml-3">Contacts</a></li>
+            <li><Link href="#home" className="font-semibold hover:text-custom2 ml-3">Home</Link></li>
+            <li><Link href="#about" className="font-semibold hover:text-custom2 ml-3">About</Link></li>
+            <li><Link href="#skills" className="font-semibold hover:text-custom2 ml-3"> Skills</Link></li>
+            <li><Link href="#projects" className="font-semibold hover:text-custom2 ml-3">Projects</Link></li>
+            <li><Link href="#contacts" className="font-semibold hover:text-custom2 ml-3">Contact</Link></li>
         </ul>
     )
 };

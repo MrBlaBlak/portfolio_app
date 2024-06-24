@@ -13,8 +13,8 @@ type Props = {};
 const AboutMe = ({}: Props) => {
     return (
         <>
-            <div className="hero ">
-                    <div className="max-w-screen-xl text-center pb-24">
+            <section id="about" className="hero pt-12">
+                    <div className="max-w-screen-xl text-center ">
                         <div className="flex flex-col items-center">
                             <Heading title="About me"/>
                             <PersonalData>
@@ -48,7 +48,7 @@ const AboutMe = ({}: Props) => {
                             </FeatureItem>
                         </div>
                     </div>
-                </div>
+                </section>
         </>
     )
 };

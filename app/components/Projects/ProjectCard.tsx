@@ -23,7 +23,7 @@ const ProjectCard = ({ imageSrc,linkIcons  ,stackIcons , children }: Props) => {
                 <Image src={imageSrc} alt="ProjectPreview" />
                 <div className="absolute top-2 right-2 flex space-x-2">
                     {linkIcons.map((linkIcon, index) => (
-                        <div className="flex rounded-full bg-black w-10 h-10 justify-center items-center">
+                        <div key={index} className="flex rounded-full bg-black w-10 h-10 justify-center items-center">
                         <a
                             key={index}
                             href={linkIcon.url}

@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import photo from '@/public/images/photo.png';
-import useIntersectionObserver from "../hooks/useIntersectionObserver"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 type Props = {};
 const Photo = ({}: Props) => {
     const [ref, isIntersecting] = useIntersectionObserver({

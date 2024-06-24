@@ -1,16 +1,20 @@
 import React from 'react';
 import Heading from '../Heading'
+import Image from 'next/image';
 import StackIcon from "tech-stack-icons";
 import TechStackItem from "./TechStackItem"
 import { motion } from "framer-motion"
+import hybernateLogo from '@/public/images/hibernate.png';
+import unityLogo from '@/public/images/unity.png';
+import csharpLogo from '@/public/images/Csharp.png';
+import MissingItem from "./MissingItem"
 type Props = {};
 const TechStack = ({}: Props) => {
 
     return (
         <>
-            <div className="hero ">
-                <div className="hero-content text-center">
-                    <div className="max-w-screen-xl">
+            <div className="hero">
+                    <div className="max-w-screen-xl text-center pb-24">
                         <div className="flex flex-col items-center">
                             <Heading title="Tech Stack"/>
                             <div className="flex flex-wrap justify-center px-20 lg:px-10 py-20  gap-24">
@@ -28,14 +32,17 @@ const TechStack = ({}: Props) => {
                                 <TechStackItem stackIcon="java" title="Java"/>
                                 <TechStackItem stackIcon="mysql" title="MySQL"/>
                                 <TechStackItem stackIcon="spring" title="Spring"/>
+                                <MissingItem stackIcon={hybernateLogo} title="Hybernate"/>
                                 <TechStackItem stackIcon="c++" title="C++"/>
+                                <MissingItem stackIcon={csharpLogo} title="C#"/>
                                 <TechStackItem stackIcon="webpack" title="Webpack"/>
-                                <TechStackItem stackIcon="github" title="Github"/>
+                                <TechStackItem stackIcon="github" title="Github" style="bg-white rounded-3xl"/>
+                                <MissingItem stackIcon={unityLogo} title="Unity"/>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
         </>
     )
 };

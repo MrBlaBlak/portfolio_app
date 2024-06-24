@@ -4,6 +4,7 @@ import Navbar from "./components/Header/Navbar"
 import Invitation from "./components/Header/Invitation"
 import AboutMe from "./components/AboutMe/AboutMe"
 import TechStack from "./components/TechStack/TechStack"
+import Projects from "./components/Projects/Projects"
 export default function Home() {
 
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                 <Invitation/>
                 <AboutMe/>
                 <TechStack/>
+                <Projects/>
                 <Footer/>
             </div>
     );

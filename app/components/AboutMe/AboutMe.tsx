@@ -1,7 +1,5 @@
 import React from "react";
-import Photo from "../Photo"
-
-type Props = {};
+import Photo from "./Photo"
 import {FaMobileScreen} from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { PiSneakerMoveFill } from "react-icons/pi";
@@ -11,12 +9,12 @@ import FeatureItemDescription from "./FeatureItemDescription"
 import Heading from "../Heading"
 import PersonalData from "./PersonalData"
 import InfoItem from "./InfoItem"
+type Props = {};
 const AboutMe = ({}: Props) => {
     return (
         <>
             <div className="hero ">
-                <div className="hero-content text-center pb-24">
-                    <div className="max-w-screen-xl">
+                    <div className="max-w-screen-xl text-center pb-24">
                         <div className="flex flex-col items-center">
                             <Heading title="About me"/>
                             <PersonalData>
@@ -51,8 +49,6 @@ const AboutMe = ({}: Props) => {
                         </div>
                     </div>
                 </div>
-            </div>
-
         </>
     )
 };

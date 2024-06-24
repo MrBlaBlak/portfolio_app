@@ -6,8 +6,7 @@ type Props = {};
 const Invitation = ({}: Props) => {
     return (
         <div className="hero min-h-screen">
-            <div className="hero-content text-center appear-animation">
-                <div className="max-w-screen-xl">
+                <div className="max-w-screen-xl  text-center appear-animation">
                     <p className="text-white text-xl">Hi, I am </p>
                     <h1 className="text-5xl font-bold text-gradient p-5">Michał Romak</h1>
                     <TypingEffect textList={["FrontEnd Developer", "React/Next Developer", "Java Developer"]}
@@ -21,7 +20,6 @@ const Invitation = ({}: Props) => {
                     </div>
                     <SocialButton/>
                 </div>
-            </div>
         </div>
     )
 };

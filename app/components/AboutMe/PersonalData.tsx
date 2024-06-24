@@ -10,7 +10,7 @@ const PersonalData = ({children}: Props) => {
         threshold: 0.1,
     });
     return (
-            <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 place-items-center py-10 opacity-0 ${isIntersecting ? 'move-up-animation' : ''}`} >
+            <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 opacity-0 ${isIntersecting ? 'move-up-animation' : ''}`} >
                 {children}
             </div>
     )

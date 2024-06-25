@@ -26,7 +26,7 @@ const Contact = () => {
                     </div>
                     <div className="w-4/5 md:w-1/4 lg:w-1/4">
                         <Heading title="Send me a message" classParameteres="text-3xl" />
-                        <ContactForm /> {/* Use the new ContactForm component */}
+                        <ContactForm />
                     </div>
                 </div>
             </div>

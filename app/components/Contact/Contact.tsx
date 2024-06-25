@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Heading from '../Heading';
+import Heading2 from '../Heading2';
 import SocialButton from '../Header/SocialButton';
 import ContactForm from './ContactForm'; // Import the new ContactForm component
 import useIntersectionObserver from "../../hooks/useIntersectionObserver"
@@ -14,7 +15,7 @@ const Contact = () => {
                 <Heading title="Contact" />
                 <div className="flex flex-row flex-wrap w-full justify-evenly">
                     <div className="w-4/5 md:w-1/4 lg:w-1/4">
-                        <Heading title="Get in touch" classParameteres="text-3xl" />
+                        <Heading2 title="Get in touch" />
                         <div className="justify-left text-gray-400">
                             <h2 className="pt-10">Email:</h2>
                             <p>m.romak.poczta@gmail.com</p>
@@ -25,7 +26,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="w-4/5 md:w-1/4 lg:w-1/4">
-                        <Heading title="Send me a message" classParameteres="text-3xl" />
+                        <Heading2 title="Send me a message" />
                         <ContactForm />
                     </div>
                 </div>

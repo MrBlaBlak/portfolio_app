@@ -18,7 +18,7 @@ const ProjectCard = ({ imageSrc,linkIcons  ,stackIcons , children }: Props) => {
         threshold: 0.1,
     });
     return (
-        <div ref={ref} className={`opacity-0 card max-w-[400px] bg-base-100 shadow-xl ${isIntersecting ? 'move-up-animation' : ''}`}>
+        <div ref={ref} className={`opacity-0 mx-2 sm:mx-0 card max-w-[400px] bg-base-100 shadow-xl ${isIntersecting ? 'move-up-animation' : ''}`}>
             <figure>
                 <Image src={imageSrc} alt="ProjectPreview" />
                 <div className="absolute top-2 right-2 flex space-x-2">

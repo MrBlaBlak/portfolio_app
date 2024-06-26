@@ -17,7 +17,7 @@ const TechStack = ({}: Props) => {
                     <div className="max-w-screen-xl text-center ">
                         <div className="flex flex-col items-center">
                             <Heading title="Tech Stack"/>
-                            <div className="flex flex-wrap justify-center px-20 lg:px-10 py-20  gap-24">
+                                <div className="flex flex-wrap justify-center px-12 sm:px-20 lg:px-10 py-20  gap-16 sm:gap-24">
                                 <TechStackItem stackIcon="reactjs" title="ReactJs"/>
                                 <TechStackItem stackIcon="nextjs2" title="NextJs"/>
                                 <TechStackItem stackIcon="typescript" title="TypeScript"/>

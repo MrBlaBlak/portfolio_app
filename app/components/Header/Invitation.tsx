@@ -10,7 +10,7 @@ const Invitation = ({}: Props) => {
                 <div className="max-w-screen-xl  text-center appear-animation">
                     <p className="text-white text-xl">Hi, I am </p>
                     <h1 className="text-5xl font-bold text-gradient p-5">Michał Romak</h1>
-                    <TypingEffect textList={["FrontEnd Developer", "React/Next Developer", "Java Developer"]}
+                    <TypingEffect textList={["FrontEnd Developer", "React Developer", "Java Developer"]}
                                   period={2000}
                                   typingSpeed={40}
                                   deletingSpeed={40}/>

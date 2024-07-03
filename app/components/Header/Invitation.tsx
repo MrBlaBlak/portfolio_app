@@ -18,7 +18,7 @@ const Invitation = ({}: Props) => {
                     <div className="space-x-4">
 
                         <button className="btn btn-outline btn-warning w-40"><Link href="#projects" className="font-semibold hover:text-custom2 ml-3">View Projects</Link></button>
-                        <button className="btn glass text-white w-40"><Link href="https://drive.google.com/file/d/1qyCMP1pon6Imwd2edOu97HWdrZZV4asp/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open PDF Resume</Link></button>
+                        <button className="btn glass text-white w-40"><Link href="https://drive.google.com/file/d/1XVhpkdI0r9UuOyHGQEOl_q_g0lTux1eB/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open PDF Resume</Link></button>
                     </div>
                     <SocialButton/>
                 </div>

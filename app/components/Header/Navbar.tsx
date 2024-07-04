@@ -6,7 +6,7 @@ type Props = {};
 const Navbar = ({}: Props) => {
 
     return (<>
-        <div className="navbar bg-zinc-900 border-b-2 border-b-custom2 py-0 fixed z-50">
+        <div className="navbar bg-base-300 border-b-2 border-b-custom2 py-0 fixed z-50">
             <div className="navbar-start w-max md:w-max lg:w-2/5">
                 <div className="pl-4 md:pl-12 lg:pl-36">
                     <Logo/>

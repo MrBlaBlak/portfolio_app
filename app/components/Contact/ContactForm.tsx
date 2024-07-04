@@ -86,7 +86,7 @@ const ContactForm = ({}: Props) => {
                     placeholder="Your Message"
                     required
                 ></textarea>
-                <button disabled={isSubmitting} type="submit" className="btn glass text-white w-40">Send
+                <button disabled={isSubmitting} type="submit" className="btn glass w-40">Send
                     Message {isSubmitting && <span className="loading loading-spinner loading-sm"></span>}</button>
             </form>
 

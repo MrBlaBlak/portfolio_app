@@ -25,7 +25,7 @@ const AboutMe = ({}: Props) => {
                             </PersonalData>
                             <Photo/>
                         </div>
-                        <p className="py-6 px-20 text-white text-lg">I am a software developer passionate about technology,
+                        <p className="py-6 px-20 text-lg">I am a software developer passionate about technology,
                             with over 3 years of programming experience. My primary strengths lie in problem-solving and
                             effective communication.
                             I excel in fast learning and apply my knowledge effectively across all my projects.</p>

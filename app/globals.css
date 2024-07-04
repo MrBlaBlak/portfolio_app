@@ -9,11 +9,10 @@
 }
 
 body {
-  color: #ffffff; /* Set text color to white */
 }
 
 .text-gradient {
-  background: linear-gradient(to bottom, #ecbb54, #ffffff);
+  background: linear-gradient(to bottom, #fbbf24, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

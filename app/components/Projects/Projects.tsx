@@ -36,7 +36,8 @@ const Projects = ({}: Props) => {
                                 {name: 'redux'},
                                 {name: 'prisma'},
                                 {name: 'tailwindcss'},
-                                {name: 'digitalocean'}
+                                {name: 'supabase'},
+                                {name: 'zod'},
                             ]}
                         >
                             <ProjectCardDescription title="Balanced Teams Ranking System for Titanfall 2 (Next)"

@@ -6,7 +6,7 @@ import Link from 'next/link'
 type Props = {};
 const Invitation = ({}: Props) => {
     return (
-        <div id="home" className="hero min-h-dvh">
+        <div id="home" className="hero min-h-screen">
                 <div className="max-w-screen-xl  text-center appear-animation">
                     <p className="text-xl">Hi, I am </p>
                     <h1 className="text-5xl font-bold text-gradient p-5">Michał Romak</h1>

@@ -17,7 +17,7 @@ const Invitation = ({}: Props) => {
                     <p className="py-6 px-2 text-xl">an adept web developer dedicated to transforming creative concepts into engaging digital experiences online.</p>
                     <div className="max-[360px]:flex max-[360px]:flex-col max-[360px]:gap-y-4   min-[361px]:space-x-4">
                         <Link href="#projects" ><button className="btn btn-outline btn-warning w-40">View Projects</button></Link>
-                        <Link href="https://drive.google.com/file/d/1XVhpkdI0r9UuOyHGQEOl_q_g0lTux1eB/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <button className="btn glass w-40">Open PDF Resume</button></Link>
+                        <Link href="https://drive.google.com/file/d/1VI_s_tnHcWXIW2l3Wo21LmpA8ByYIzUk/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <button className="btn glass w-40">Open PDF Resume</button></Link>
                     </div>
                     <SocialButton/>
                 </div>

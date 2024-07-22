@@ -18,10 +18,10 @@ const AboutMe = ({}: Props) => {
                         <div className="flex flex-col items-center">
                             <Heading title="About me"/>
                             <PersonalData>
-                                <InfoItem label="Name" value="Michał Romak" />
-                                <InfoItem label="Email" value="m.romak.poczta@gmail.com" />
-                                <InfoItem label="Education" value="Masters Degree - Psychology" />
-                                <InfoItem label="From" value="Lublin, Poland" />
+                                <InfoItem label="Name" values={ ["Michał Romak"]} />
+                                <InfoItem label="Email" values={ ["m.romak.poczta@gmail.com"]} />
+                                <InfoItem label="Education" values={ ["Psychology - Masters Degree ", "Computer Science - 3 terms"]} />
+                                <InfoItem label="From" values={ ["Lublin, Poland"]} />
                             </PersonalData>
                             <Photo/>
                         </div>

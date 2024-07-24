@@ -1,10 +1,10 @@
 'use client'
 import React, {ReactNode} from 'react';
 import Image from 'next/image';
-import StackIcon from 'tech-stack-icons'; // Adjust the import path as necessary
+import StackIcon from 'tech-stack-icons';
 import { StaticImageData } from "next/image"
-import { motion } from "framer-motion"
 import useIntersectionObserver from "../../hooks/useIntersectionObserver"
+import styles from '../../styles/ProjectCard.module.sass'
 
 type Props = {
     imageSrc: StaticImageData,
@@ -21,15 +21,16 @@ const ProjectCard = ({ imageSrc,linkIcons  ,stackIcons , children }: Props) => {
         <div ref={ref} className={`opacity-0 mx-2 sm:mx-0 card max-w-[400px] bg-base-100 shadow-xl ${isIntersecting ? 'move-up-animation' : ''}`}>
             <figure>
                 <Image src={imageSrc} alt="ProjectPreview" />
-                <div className="absolute top-2 right-2 flex space-x-2">
+                <div className="absolute top-2 right-2 flex space-x-2" >
+                    <i className={`shiny ${styles.shiny}`}></i>
                     {linkIcons.map((linkIcon, index) => (
-                        <div key={index} className="flex rounded-full bg-black w-10 h-10 justify-center items-center">
+                        <div key={index} className="flex rounded-full bg-base-200 w-10 h-10 justify-center items-center">
                         <a
                             key={index}
                             href={linkIcon.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white transform transition-transform duration-200 hover:scale-110"
+                            className= "text-custom2 transform transition-transform duration-200 hover:scale-110"
                         >
                             {linkIcon.icon}
                         </a>

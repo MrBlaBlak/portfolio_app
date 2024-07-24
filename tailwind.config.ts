@@ -14,16 +14,19 @@ const config: Config = {
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
             borderColor: {
-                custom: '#ac6418',
-                custom2: '#ecbb54'
+                darkOrange: '#ac6418',
+                deepGold: '#ecbb54',
+                shinyGold: '#fbbf24'
             },
             colors: {
-                custom: '#ac6418',
-                custom2: '#ecbb54'
+                darkOrange: '#ac6418',
+                deepGold: '#ecbb54',
+                shinyGold: '#fbbf24'
             },
             backgroundColor: {
-                custom: '#ac6418',
-                custom2: '#ecbb54'
+                darkORange: '#ac6418',
+                deepGold: '#ecbb54',
+                shinyGold: '#fbbf24'
             },
         },
     },

@@ -12,7 +12,7 @@ const FeatureItem = ({ icon, children }: Props) => {
     });
     return (
         <div ref={ref} className={`opacity-0 flex flex-col items-center gap-2 ${isIntersecting ? 'move-up-animation' : ''}`}>
-            <div className="flex w-24 h-24 rounded-full bg-custom2 items-center justify-center">
+            <div className="flex w-24 h-24 rounded-full bg-deepGold items-center justify-center">
                 {icon}
             </div>
             {children}

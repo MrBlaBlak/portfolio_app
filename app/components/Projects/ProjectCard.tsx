@@ -30,7 +30,7 @@ const ProjectCard = ({ imageSrc,linkIcons  ,stackIcons , children }: Props) => {
                             href={linkIcon.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className= "text-custom2 transform transition-transform duration-200 hover:scale-110"
+                            className= "text-deepGold transform transition-transform duration-200 hover:scale-110"
                         >
                             {linkIcon.icon}
                         </a>

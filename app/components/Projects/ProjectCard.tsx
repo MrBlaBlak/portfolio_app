@@ -4,7 +4,7 @@ import Image from 'next/image';
 import StackIcon from 'tech-stack-icons';
 import { StaticImageData } from "next/image"
 import useIntersectionObserver from "../../hooks/useIntersectionObserver"
-import styles from '../../styles/ProjectCard.module.sass'
+import styles from '@/app/styles/shinyEffect.module.sass'
 
 type Props = {
     imageSrc: StaticImageData,
@@ -22,7 +22,7 @@ const ProjectCard = ({ imageSrc,linkIcons  ,stackIcons , children }: Props) => {
             <figure>
                 <Image src={imageSrc} alt="ProjectPreview" />
                 <div className="absolute top-2 right-2 flex space-x-2" >
-                    <i className={`shiny ${styles.shiny}`}></i>
+                    <i className={styles.shiny}></i>
                     {linkIcons.map((linkIcon, index) => (
                         <div key={index} className="flex rounded-full bg-base-200 w-10 h-10 justify-center items-center">
                         <a

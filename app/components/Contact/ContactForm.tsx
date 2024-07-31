@@ -3,6 +3,7 @@ import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import SuccessMessage from './SuccessMessage'
 import ErrorMessage from './ErrorMessage'
+import styles from "@/app/styles/shinyEffect.module.sass";
 
 type Props = {};
 
@@ -87,7 +88,7 @@ const ContactForm = ({}: Props) => {
                     required
                 ></textarea>
                 <button disabled={isSubmitting} type="submit" className="btn glass w-40">Send
-                    Message {isSubmitting && <span className="loading loading-spinner loading-sm"></span>}</button>
+                    Message {isSubmitting && <span className="loading loading-spinner loading-sm"></span>}<i className={styles.shiny}></i></button>
             </form>
 
             {showSuccessMessage && (

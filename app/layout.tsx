@@ -1,24 +1,28 @@
-import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import type {Metadata} from "next";
+import {Rubik} from "next/font/google";
 import "./styles/globals.css";
+import {ReactNode} from "react";
+import StoreProvider from "@/app/redux/StoreProvider";
 
 
-const inter = Rubik({ subsets: ["latin"] });
+const inter = Rubik({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "Michał Romak - portfolio",
-  description: "Created with NextJS",
+    title: "Michał Romak - portfolio",
+    description: "Created with NextJS",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: ReactNode;
 }>) {
-  return (
-    <html data-theme="dark" lang="en">
-      <body className ={`${inter.className}`}>{children}</body>
-    </html>
-      
-  );
+    return (
+        <html  lang="en">
+        <StoreProvider>
+            <body className={`${inter.className}`}>{children}</body>
+        </StoreProvider>
+        </html>
+
+    );
 }

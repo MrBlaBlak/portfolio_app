@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
-}
 
-body {
-}
-
-.text-gradient {
+[data-theme="dark"] .text-gradient {
   background: linear-gradient(to bottom, #fbbf24, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="light"] .text-gradient {
+  background: linear-gradient(to bottom, #fbbf24, #f2f2f2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

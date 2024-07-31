@@ -24,7 +24,7 @@ const config: Config = {
                 shinyGold: '#fbbf24'
             },
             backgroundColor: {
-                darkORange: '#ac6418',
+                darkOrange: '#ac6418',
                 deepGold: '#ecbb54',
                 shinyGold: '#fbbf24'
             },
@@ -35,19 +35,22 @@ const config: Config = {
     daisyui: {
         themes: [
             {
+                light: {
+                    ...require("daisyui/src/theming/themes")["light"],
+                    "warning": "#ecbb54",
+                    "base-200":"#ffffff",
+                    "base-300":"#ffffff",
+                    "neutral": "#aaaaaa"
+                }
+            },
+            {
                 dark: {
                     ...require("daisyui/src/theming/themes")["dark"],
                     "warning": "#ecbb54",
                     "base-content": "#ffffff"
                 }
             },
-            {
-                light: {
-                    ...require("daisyui/src/theming/themes")["light"],
-                    "warning": "#ecbb54",
-                    "base-200":"#ffffff"
-                }
-            },
+
         ],
     },
 };

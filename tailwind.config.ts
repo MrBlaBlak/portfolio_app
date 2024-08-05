@@ -38,7 +38,7 @@ const config: Config = {
                 light: {
                     ...require("daisyui/src/theming/themes")["light"],
                     "warning": "#ecbb54",
-                    "base-200":"#fefbf6",
+                    "base-200":"#ffffff",
                     "base-300":"#ffffff",
                     "neutral": "#aaaaaa"
                 }

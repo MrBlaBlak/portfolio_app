@@ -14,7 +14,13 @@
   -webkit-text-fill-color: transparent;
 }
 
-.underline-gradient {
+[data-theme="dark"]  .underline-gradient {
+  background-image: linear-gradient(to right, #fbbf24, #ffffff); /* Gradient colors */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* Thickness of the underline */
+}
+[data-theme="light"] .underline-gradient {
   background-image: linear-gradient(to right, #fbbf24, #ffffff); /* Gradient colors */
   background-position: bottom;
   background-repeat: no-repeat;

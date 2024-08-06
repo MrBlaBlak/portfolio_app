@@ -5,7 +5,7 @@ import {useAppSelector} from "@/app/redux/hooks";
 type Props = { children: ReactNode };
 const ThemeProvider = ({children}: Props) => {
     const {theme} = useAppSelector((state) => state.themes);
-    return (<div className="bg-base-200" data-theme={theme}>
+    return (<div className="bg-base-200 text-base-content" data-theme={theme}>
         {children}
     </div>)
 };

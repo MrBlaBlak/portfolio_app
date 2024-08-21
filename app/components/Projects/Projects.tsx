@@ -3,16 +3,16 @@ import Heading from '../Heading'
 import rankingPhoto from '@/public/images/ranking.jpg';
 import rankingPhoto2 from '@/public/images/ranking2.jpg';
 import VRPhoto from '@/public/images/VR.jpg';
+import Scheduler from '@/public/images/scheduler.jpg';
 import hybernateLogo from '@/public/images/hibernate.png';
 import unityLogo from '@/public/images/unity.png';
 import csharpLogo from '@/public/images/Csharp.png';
 import ProjectCard from './ProjectCard'
 import ProjectCardDescription from './ProjectCardDescription'
-import { TbWorldWww } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
-import { GrDocumentPdf } from "react-icons/gr";
-import { FaYoutube } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
+import {TbWorldWww} from "react-icons/tb";
+import {FaGithub, FaYoutube} from "react-icons/fa";
+import {GrDocumentPdf} from "react-icons/gr";
+import {CgFileDocument} from "react-icons/cg";
 
 
 type Props = {};
@@ -36,6 +36,7 @@ const Projects = ({}: Props) => {
                                 {name: 'redux'},
                                 {name: 'prisma'},
                                 {name: 'tailwindcss'},
+                                {name: 'sass'},
                                 {name: 'supabase'},
                                 {name: 'zod'},
                             ]}
@@ -75,6 +76,29 @@ const Projects = ({}: Props) => {
                             <ProjectCardDescription title="EthnoVR 3.0 (Unity/C#)"
                                                     description="EthnoVR 3.0 is a tool that utilizes Immersive Virtual Environment (IVE) technology through the Virtual Reality Perspective Taking (VRPT) technique.
                             It is designed to enhance general empathy and ethnocultural empathy levels while mitigating ethnocentrism."/>
+                        </ProjectCard>
+                        <ProjectCard imageSrc={Scheduler}
+                                     linkIcons={[
+                                         {
+                                             icon: <TbWorldWww className="w-6 h-6 "/>,
+                                             url: 'https://interview-task-scheduler.vercel.app/'
+                                         },
+                                         {
+                                             icon: <FaGithub className="w-6 h-6 "/>,
+                                             url: 'https://github.com/MrBlaBlak/portfolio-scheduler'
+                                         },
+                                     ]}
+                                     stackIcons={[
+                                         {name: 'reactjs'},
+                                         {name: 'nextjs2'},
+                                         {name: 'js'},
+                                         {name: 'firebase'},
+                                     ]}>
+                            <ProjectCardDescription title="Calendar Scheduler"
+                                                    description="This project implements the DevExtreme React Scheduler,
+                                                    a versatile component for managing and displaying scheduled data in various views (day, week, month).
+                                                    The implementation includes language switching capabilities, integration with a Firebase database,
+                                                    and a modernized codebase using React's functional components instead of the older class-based approach."/>
                         </ProjectCard>
                     </div>
                 </div>

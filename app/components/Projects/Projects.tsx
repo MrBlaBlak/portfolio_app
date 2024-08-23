@@ -81,7 +81,7 @@ const Projects = ({}: Props) => {
                                      linkIcons={[
                                          {
                                              icon: <TbWorldWww className="w-6 h-6 "/>,
-                                             url: 'https://interview-task-scheduler.vercel.app/'
+                                             url: 'https://calendarscheduler.vercel.app/'
                                          },
                                          {
                                              icon: <FaGithub className="w-6 h-6 "/>,

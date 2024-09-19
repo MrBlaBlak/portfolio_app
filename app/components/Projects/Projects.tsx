@@ -3,6 +3,7 @@ import Heading from '../Heading'
 import rankingPhoto from '@/public/images/ranking.jpg';
 import rankingPhoto2 from '@/public/images/ranking2.jpg';
 import VRPhoto from '@/public/images/VR.jpg';
+import CodingPhoto from '@/public/images/coding.png';
 import Scheduler from '@/public/images/scheduler.jpg';
 import hybernateLogo from '@/public/images/hibernate.png';
 import unityLogo from '@/public/images/unity.png';
@@ -99,6 +100,21 @@ const Projects = ({}: Props) => {
                                                     a versatile component for managing and displaying scheduled data in various views (day, week, month).
                                                     The implementation includes language switching capabilities, integration with a Firebase database,
                                                     and a modernized codebase using React's functional components instead of the older class-based approach."/>
+                        </ProjectCard>
+                        <ProjectCard imageSrc={CodingPhoto}
+                                     linkIcons={[
+                                         {
+                                             icon: <FaGithub className="w-6 h-6 "/>,
+                                             url: 'https://github.com/MrBlaBlak/Algorithm_Exercises'
+                                         },
+                                     ]}
+                                     stackIcons={[
+                                         {name: 'js'},
+                                     ]}>
+                            <ProjectCardDescription title="Coding challenges and solutions"
+                                                    description="This repository serves for developing my problem-solving skills,
+                                                    exploring various algorithms and data structures,
+                                                    and demonstrating my ability to approach coding challenges effectively."/>
                         </ProjectCard>
                     </div>
                 </div>

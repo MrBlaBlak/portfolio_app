@@ -20,6 +20,7 @@ const TechStack = ({}: Props) => {
                             <TechStackItem stackIcon="nextjs2" title="NextJs"/>
                             <TechStackItem stackIcon="typescript" title="TypeScript"/>
                             <TechStackItem stackIcon="js" title="JavaScript"/>
+                            <TechStackItem stackIcon="python" title="Python"/>
                             <TechStackItem stackIcon="tailwindcss" title="TailwindCSS"/>
                             <TechStackItem stackIcon="materialui" title="MaterialUI"/>
                             <TechStackItem stackIcon="redux" title="Redux"/>

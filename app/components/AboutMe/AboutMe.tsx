@@ -26,7 +26,7 @@ const AboutMe = ({}: Props) => {
                             <Photo/>
                         </div>
                         <p className="py-6 px-20 text-lg">I am a software developer passionate about technology,
-                            with over 3 years of programming experience. My primary strengths lie in problem-solving and
+                            with over 1.5 year of commercial programming experience. My primary strengths lie in problem-solving and
                             effective communication.
                             I excel in fast learning and apply my knowledge effectively across all my projects.</p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 py-10 gap-y-10 xl:gap-0">
@@ -40,7 +40,7 @@ const AboutMe = ({}: Props) => {
                             </FeatureItem>
                             <FeatureItem icon={<PiSneakerMoveFill className="w-12 h-12" />}>
                                 <FeatureItemDescription  title="Fast"
-                                                         description="I aim to provide smooth, efficient browsing experiences by emphasizing fast loading times, ."/>
+                                                         description="I aim to provide smooth, efficient browsing experiences by emphasizing fast loading times."/>
                             </FeatureItem>
                             <FeatureItem icon={<BiMove className="w-12 h-12" />}>
                                 <FeatureItemDescription title="Dynamic"
